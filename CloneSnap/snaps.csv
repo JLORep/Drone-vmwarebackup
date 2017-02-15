@@ -1,0 +1,10 @@
+MasterVM,BackupDS
+Kootenai,esra_sas_vmstore01,
+Gila,esra_sas_vmstore01,
+Ramona,esra_sas_vmstore01,
+spappuat1,icred_vmstore02,
+spappuat2,icred_vmstore02,
+SPWFEUAT1,icred_vmstore01,
+SPWFEUAT2,icred_vmstore01,
+CIRRUS,icred_vmstore02,
+stratus,icred_vmstore02,
