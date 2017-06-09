@@ -4,14 +4,14 @@
 ######################################################
 #                                                    #
 # *Recurses through Directory of CSVs                #
-# *Gets VMs Home Datastore							 #						
-# *Performs Snapshot								 #
-# *Performs Clone from Above Snapshot				 #
+# *Gets VMs Home Datastore							                    #						
+# *Performs Snapshot								                         #
+# *Performs Clone from Above Snapshot				            #
 # *Exports Clone as OVA	                             #
-# *Deletes SnapShot     							 #
-# *Writes To Log									 #
-# *Recurses through CSV						     	 #
-# *Sends Email with Log to SS when complete 		 #
+# *Deletes SnapShot     							                      #
+# *Writes To Log								                           	 #
+# *Recurses through CSV						                      	 #
+# *Sends Email with Log to SS when complete 		       #
 #                                                    #
 ######################################################
 # Date: 28/07/2015                                   #
