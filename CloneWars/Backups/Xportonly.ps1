@@ -8,15 +8,15 @@
 ####################################################################
 Param( [string] $VMName)
 
-Connect-VIserver -server "vc2.ad.mmu.ac.uk" $VMName + "'"
+Connect-VIserver -server "*******.ac.uk" $VMName + "'"
 
-"'vi://AD\\46020944:Pa55work@vc2.mmu.ac.uk/ITS/vm/" + $VMName + "'"
+"'vi://AD\\*******:******@******.ac.uk/ITS/vm/" + $VMName + "'"
 
 
 
-$SharedSpace = "\\ascfiler1\vm_repository\Test"
+$SharedSpace = "\\****\vm_repository\Test"
 $ovfFile = $Sharedspace + "\" + $VMName + "\" + $VMName + ".ovf"
-$ovftoolpath = "\\informer\c$\Program Files\VMware\VMware OVF Tool"
+$ovftoolpath = "\\******\c$\Program Files\VMware\VMware OVF Tool"
 $ovftool = ''
 $arg = " --powerOffSource" + " " + $viserver + " " + $ovfFile
 if(test-path $ovftoolpath)
