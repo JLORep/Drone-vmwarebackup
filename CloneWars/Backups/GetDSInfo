@@ -1,3 +1,5 @@
+##Get Vmware Datastore Info & Export to csv##
+
 # PowerCLI Header
 Write-host "Loading PowerCLI" -ForeGroundColor Red
 $VMwareLoaded = $(Get-PSSnapin | ? {$_.Name -like "*VMware*"} ) -ne $null
@@ -14,7 +16,7 @@ Connect-VIserver -server $vCenterServer | Out-Null
 
 $Today = (Get-Date -Format "yyyyMMdd-HH.mm")
 
-$defaultVIServers = "vc2.ad.mmu.ac.uk"
+$defaultVIServers = "*******ac.uk"
 
 $vcenter = $defaultVIServers
 
@@ -23,4 +25,4 @@ $report = Get-Datacenter | Get-Datastore | Foreach-Object {
     $_ | Get-VM | Select-Object Name,@{n='DataStore';e={$ds}} 
     }
 
-$report | Export-Csv "H:\DS.stats.$vcenter.$today.csv" -NoTypeInformation -UseCulture
+$report | Export-Csv "****:\DS.stats.$vcenter.$today.csv" -NoTypeInformation -UseCulture
