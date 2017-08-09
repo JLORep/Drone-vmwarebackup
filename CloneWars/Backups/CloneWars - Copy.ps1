@@ -6,7 +6,7 @@
 # *Reads CSV                                         #
 # *Gets VMs Home Datastore                           #						
 # *Performs Snapshot                                 #
-# *Performs Clone from Above Snapshot	               #
+# *Performs Clone from Above Snapshot                #
 # *Exports Clone as OVA                              #
 # *Deletes SnapShot                                  #
 # *Writes To Log                                     #
