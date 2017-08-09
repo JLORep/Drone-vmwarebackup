@@ -4,14 +4,14 @@
 ######################################################
 #                                                    #
 # *Reads CSV                                         #
-# *Gets VMs Home Datastore							 #						
-# *Performs Snapshot								 #
-# *Performs Clone from Above Snapshot				 #
-# *Exports Clone as OVA	                             #
-# *Deletes SnapShot     							 #
-# *Writes To Log									 #
-# *Recurses through CSV						     	 #
-# *Sends Email with Log to SS when complete 		 #
+# *Gets VMs Home Datastore                           #						
+# *Performs Snapshot                                 #
+# *Performs Clone from Above Snapshot	               #
+# *Exports Clone as OVA                              #
+# *Deletes SnapShot                                  #
+# *Writes To Log                                     #
+# *Recurses through CSV                              #
+# *Sends Email with Log to SS when complete          #
 #                                                    #
 ######################################################
 # Date: 20/05/2015                                   #
@@ -19,10 +19,10 @@
 ######################################################
 
 #VCentre DNS Name
-$VCDNS ="VC2.ad.mmu.ac.uk"
+$VCDNS ="********ac.uk"
 
 #Export Location
-$ExportLoc = "\\ascfiler1\vm_repository\CloneTest\AutoExport\Test"
+$ExportLoc = "\\********\vm_repository\CloneTest\AutoExport\Test"
 
 #Create PS-Drive Mapping from Datastore to the above location
 New-PSDrive -Name Y -PSProvider filesystem -Root $ExportLoc
@@ -58,7 +58,7 @@ $TargetDS = Get-Datastore -VM $SourceVM
 $BACKUP_FOLDER = "Backup"
 
 # vCenter Server
-$vCenterServer="vc2.ad.mmu.ac.uk"
+$vCenterServer="*****ac.uk"
 
 # Set Date format for clone names
 $CloneDate = Get-Date -Format "ddMMyyyy-hhmmss"
@@ -195,7 +195,7 @@ Target Datastore:", $TargetDS,"
 Time Started:", $timestart,"
 Time Completed:", $timecomplete
 $FullVMList
-$smtpServer = "outlook.mmu.ac.uk"
+$smtpServer = "******.ac.uk"
 $smtp = new-object Net.Mail.SmtpClient($smtpServer)
 $smtp.Send($emailFrom,$emailTo,$subject,$body)
 
