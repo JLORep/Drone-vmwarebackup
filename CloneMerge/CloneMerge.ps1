@@ -1,14 +1,14 @@
 #################################################
 # Name: Scheduled Merge [CloneSnap.ps1]         #
-# Desc: Merges List of VMS  to schedule 		#
+# Desc: Merges List of VMS  to schedule 		    #
 #################################################
 #                                               #
 # *Reads CSV                                    #
-# *Gets VMs Home Datastore					    #						
-# *Merges Snapshot with VM 					    #
-# *Writes To Log							    #
-# *Recurses through CSV						    #
-# *Sends Email with Log to SS when complete 	#
+# *Gets VMs Home Datastore					            #						
+# *Merges Snapshot with VM 					            #
+# *Writes To Log							                  #
+# *Recurses through CSV						              #
+# *Sends Email with Log to SS when complete   	#
 #                                               #
 #################################################
 # Date: 27/08/2015                              #
@@ -16,7 +16,7 @@
 #################################################
 
 #VCentre DNS Name
-$VCDNS ="DRVC.ad.mmu.ac.uk"
+$VCDNS ="DRxx.xxxx.xxxuk"
 #Clear Screen
 clear-host
 
