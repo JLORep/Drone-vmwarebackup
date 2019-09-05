@@ -18,7 +18,7 @@
 #################################################
 
 #VCentre DNS Name
-$VCDNS ="DRVC.ad.mmu.ac.uk"
+$VCDNS ="DRxx.xx.xxx.xk"
 
 #Clear Screen
 clear-host
@@ -106,8 +106,8 @@ $VMView = $VM | Get-View
 
 #Set Date format for emails
 #$timecomplete = (Get-Date -f "HH:MM")
-#$emailFrom = "j.lockwood@mmu.ac.uk"
-#$emailTo = "ss@mmu.ac.uk"
+#$emailFrom = "xxxxxd@xxxxx.uk"
+#$emailTo = "xx@xxxxxxk"
 #$subject = "[$vm - Snapshot Complete]"
 #$body = "Snapshot details"
 #-------------
